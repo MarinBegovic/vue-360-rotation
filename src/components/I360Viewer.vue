@@ -627,18 +627,18 @@ export default {
             }
         },
         onScroll(evt){
-            evt.preventDefault(); 
+           // evt.preventDefault(); 
 
-            if(this.disableZoom || this.scrollImage){
-                if(evt.deltaY < 0){
-                    this.moveActiveIndexDown(1);
-                }else{
-                    this.moveActiveIndexUp(1);
-                }
-                this.onMove(evt.scrollTop);
-            }else{
-                this.zoomImage(evt);
-            }
+            //if(this.disableZoom || this.scrollImage){
+                //if(evt.deltaY < 0){
+                    //this.moveActiveIndexDown(1);
+              //  }else{
+                 //   this.moveActiveIndexUp(1);
+                //}
+                //this.onMove(evt.scrollTop);
+           // }else{
+            //    this.zoomImage(evt);
+          //  }
         },
         moveActiveIndexUp(itemsSkipped) {
 
